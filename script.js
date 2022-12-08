@@ -104,7 +104,7 @@ function corrige() {
 }
 
 function tocarSom(){
-  const audio = Audio('audio/end.mp3')
+  const audio = document.querySelector('audio');
   audio.play();
 }
 
@@ -132,6 +132,7 @@ function confirma() {
     if(etapas[etapaAtual] !== undefined) {
       comecarEtapa();
     } else {
+      tocarSom();
       document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
       console.log(votos);
     }
