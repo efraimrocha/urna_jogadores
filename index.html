@@ -1,50 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
-            </div>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <title>Copa 2022</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="urna">
+    <div class="tela">
+      <div class="d-1">
+        <div class="d-1-left">
+          <div class="d-1-1">
+            <span>SEU VOTO PARA</span>
+          </div>
+          <div class="d-1-2">
+            <span>VEREADOR</span>
+          </div>
+          <div class="d-1-3">
+            <div class="numero pisca"></div>
+            <div class="numero"></div>
+          </div>
+          <div class="d-1-4">
+            Nome: Casimiro<br/>
+            País: Braisl<br/>
+            
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        <div class="d-1-right">
+          <div class="d-1-image">
+            <img src="images/casimiro.jpg" alt="" />
+            Prefeito
+          </div>
+       </div>
+      </div>
+      <div class="d-2">
+        Aperte a tecla:<br/>
+        CONFIRMA para CONFIRMAR este voto<br/>
+        CORRIGE para REINICIAR este voto
+      </div>
+
+    </div>
+    <div class="teclado">
+      <div class="teclado--linha">
+        <div class="teclado--botao" onclick="clicou('1')">1</div>
+        <div class="teclado--botao" onclick="clicou('2')">2</div>
+        <div class="teclado--botao" onclick="clicou('3')">3</div>
+      </div>
+      <div class="teclado--linha">
+        <div class="teclado--botao" onclick="clicou('4')">4</div>
+        <div class="teclado--botao" onclick="clicou('5')">5</div>
+        <div class="teclado--botao" onclick="clicou('6')">6</div>
+      </div>
+      <div class="teclado--linha">
+        <div class="teclado--botao" onclick="clicou('7')">7</div>
+        <div class="teclado--botao" onclick="clicou('8')">8</div>
+        <div class="teclado--botao" onclick="clicou('9')">9</div>
+      </div>
+      <div class="teclado--linha">
+        <div class="teclado--botao" onclick="clicou('0')">0</div>
+      </div>
+      <div class="teclado--linha">
+        <div class="teclado--botao botao--branco" onclick="branco()">BRANCO</div>
+        <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
+        <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMA</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="etapas.js"></script>
+  <script src="script.js"></script>
+  
+</body>
 </html>
